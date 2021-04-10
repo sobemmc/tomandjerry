@@ -51,7 +51,7 @@ async def on_message(message):
                 data[i[0]] = [i[1]]
                 coin[str(message.author.id)][0] += 300
 
-            await message.channel.send("아주~ 잘 배웠음\n`이 단어가 부적절하다면 제리야 신고로 알려주세요!`")
+            await message.channel.send("아주~ 잘 배웠음")
 
         elif a == "디버깅":
             await message.channel.send(data[vote[1]])
