@@ -154,7 +154,7 @@ async def bt():
             else:
                 if coin["coin2"] != 0:
                     coin["coin2"] -= 500
-                    await client.change_presence(status=discord.Status.online, activity=discord.Game("버섯코인 : " + str(coin["coin"]) + "↓\n티모전자 : " + str(coin["coin2"]) + "↓"))
+                    await client.change_presence(status=discord.Status.online, activity=discord.Game("톰코인 : " + str(coin["coin"]) + "↓\n제리전자 : " + str(coin["coin2"]) + "↓"))
     
         await asyncio.sleep(random.randrange(4, 6))
 
