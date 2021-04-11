@@ -67,7 +67,7 @@ async def on_message(message):
             a = vote[0]
 
         if a == "도움":
-            embed = discord.Embed(title="정찰목록", description="-티모", color=0xFFE400)
+            embed = discord.Embed(title="정찰목록", description="-제리", color=0xFFE400)
             embed.add_field(name="제리야 배워", value="사용법:```제리야 배워 (단어)/(뜻)```\n단어에는 띄어쓰기를 사용할수 없어요.", inline=True)
             embed.add_field(name="제리야 코인", value="사용법:```제리야 종목```\n종목들을 한번에 확인하세요!", inline=True)
             await message.channel.send(embed=embed)
