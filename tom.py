@@ -3,14 +3,7 @@ import asyncio
 import json
 import random
 import os
-from discord.ext import commands
-from urllib.request import URLError
-from urllib.request import HTTPError
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
-from urllib.parse import quote
-import re # Regex for youtube link
-import warnings
+
 
 client = discord.Client()
 
