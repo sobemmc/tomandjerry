@@ -23,7 +23,7 @@ with open('coin.json', 'r') as f:
 
 @client.event
 async def on_ready():
-    await bt()
+    await client.change_presence(status = discord.Status.idle, activity = discord.Game('김민수'))
 
 @client.event
 async def on_message(message):
