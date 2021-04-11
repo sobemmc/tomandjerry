@@ -25,33 +25,6 @@ with open('coin.json', 'r') as f:
 
 
 
-tierScore = {
-    'default' : 0,
-    'iron' : 1,
-    'bronze' : 2,
-    'silver' : 3,
-    'gold' : 4,
-    'platinum' : 5,
-    'diamond' : 6,
-    'master' : 7,
-    'grandmaster' : 8,
-    'challenger' : 9
-}
-def tierCompare(solorank,flexrank):
-    if tierScore[solorank] > tierScore[flexrank]:
-        return 0
-    elif tierScore[solorank] < tierScore[flexrank]:
-        return 1
-    else:
-        return 2
-warnings.filterwarnings(action='ignore')
-bot = commands.Bot(command_prefix='!')
-
-opggsummonersearch = 'https://www.op.gg/summoner/userName='
-
-@bot.command()
-async def test(ctx,arg):
-    await ctx.send(arg)
 
 @client.event
 async def on_ready():
